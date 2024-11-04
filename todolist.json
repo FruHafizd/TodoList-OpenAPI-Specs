@@ -1,0 +1,65 @@
+{
+    "openapi" : "3.0.3",
+    "info": {
+        "title": "Todolist RESTful API",
+        "version": "1",
+        "description": "OpenAPI for Todolist RESTful API",
+        "termsOfService": "https://github.com/FruHafizd",
+        "contact": {
+            "name": "Muhammad Hafizd",
+            "email": "muhammadhafizd876@gmail.com",
+            "url": "https://github.com/FruHafizd"
+        },
+        "license": {
+            "name": "APACHE 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+    },
+
+    "servers": [
+        {
+            "description": "Todolist RESTful API Server",
+            "url": "https://{environment}.github.com/FruHafizd/api/v1",
+            "variables": {
+                "environment" : {
+                    "description": "Server Environment",
+                    "default": "dev",
+                    "enum": [
+                        "dev",
+                        "qa",
+                        "prod"
+                    ]
+                }
+            }
+        }
+    ],
+
+    "externalDocs": {
+        "description": "FruHafizd Belajar Restful OpenAPI Specs",
+        "url": "https://github.com/FruHafizd"
+    },
+
+    "paths": {
+        "/todolist" : {
+            "get" : {
+
+            },
+            "post" : {
+
+            }
+        },
+
+        "/todolist/{todolistId}" : {
+            "put" : {
+
+            },
+            "delete" : {
+
+            }
+        }
+
+    }
+
+    
+
+}
